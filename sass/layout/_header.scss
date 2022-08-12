@@ -1,11 +1,11 @@
 .page-header {
     border-bottom: 1px;
     border: 1px solid #ececec;
-}
 
-.container.header {
-    display: flex;
-    align-items: center;
+    &-container {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .main-nav {
@@ -19,12 +19,12 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-}
 
-.logo:hover {
-    color: var(--accent-color);
-}
+    &:hover {
+        color: var(--accent-color);
+    }
 
-.spanhead {
-    color: var(--title-text-color);
+    &__second-part {
+        color: var(--title-text-color);
+    }
 }

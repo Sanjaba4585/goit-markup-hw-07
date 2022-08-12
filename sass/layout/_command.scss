@@ -7,24 +7,42 @@
 
 .comand-list {
     display: flex;
-}
 
-.comand-list .item {
-    margin-right: 30px;
-    background: var(--primary-white-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    height: 428px;
-}
+    .item {
+        margin-right: 30px;
+        background: var(--primary-white-color);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+        height: 428px;
 
-.comand-list .item:nth-child(4) {
-    margin: 0;
+        &:nth-child(4) {
+            margin: 0;
+        }
+    }
+    .title {
+        margin-bottom: 10px;
+        text-align: center;
+        color: var(--title-text-color);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+    }
+    .text {
+        text-align: center;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.19;
+    }
 }
 
 .staff {
     padding-top: 30px;
     padding-bottom: 30px;
+
+    &-icon {
+        color: currentColor;
+    }
 }
 
 .text {
@@ -33,6 +51,9 @@
 
 .icon-list {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+
     width: 206px;
     height: 44px;
     margin-left: auto;
@@ -44,6 +65,10 @@
     height: 44px;
     margin-left: 10px;
     fill: #afb1b8;
+
+    &:first-child {
+        margin-left: 0;
+    }
 }
 
 .icon-link {
@@ -59,39 +84,10 @@
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.comand-list .title {
-    margin-bottom: 10px;
-    text-align: center;
-    color: var(--title-text-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-}
-
-.comand-list .text {
-    text-align: center;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.19;
-}
-
-.icon-list {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.icon-box:first-child {
-    margin-left: 0;
-}
-
-.staff-icon {
-    color: currentColor;
-}
-.icon-link:hover,
-.icon-link:focus {
-    background-color: var(--accent-color);
-    fill: var(--primary-white-color);
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        fill: var(--primary-white-color);
+    }
 }

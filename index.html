@@ -14,38 +14,47 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         />
-
-        <link rel="stylesheet" href="./css/styles.css" />
         <link rel="stylesheet" href="./css/main.min.css" />
     </head>
     <body>
         <!-- Шапка сайта -->
         <header class="page-header">
-            <div class="container header">
+            <div class="container page-header-container">
                 <nav class="main-nav">
                     <a href="index.html" class="logo" lang="en"
-                        >Web<span class="spanhead">Studio</span></a
+                        >Web<span class="logo__second-part">Studio</span></a
                     >
                     <ul class="site-nav">
-                        <li class="item">
-                            <a href="./index.html" class="link current"
+                        <li class="site-nav__item">
+                            <a
+                                href="./index.html"
+                                class="site-nav__link site-nav__link-current"
                                 >Студия</a
                             >
                         </li>
-                        <li class="item">
-                            <a href="./portfolio.html" class="link"
+                        <li class="site-nav__item">
+                            <a href="./portfolio.html" class="site-nav__link"
                                 >Портфолио</a
                             >
                         </li>
-                        <li class="item">
-                            <a href="./contact.html" class="link">Контакты </a>
+                        <li class="site-nav__item">
+                            <a href="./contact.html" class="site-nav__link"
+                                >Контакты
+                            </a>
                         </li>
                     </ul>
                 </nav>
-                <ul class="contacts-link">
-                    <li class="item mail">
-                        <a href="mailto:nfo@devstudio.com" class="link mail">
-                            <svg class="icon-mail" width="16" height="12">
+                <ul class="contacts-header">
+                    <li class="contacts-header__item">
+                        <a
+                            href="mailto:nfo@devstudio.com"
+                            class="contacts-header__link"
+                        >
+                            <svg
+                                class="contacts-header__icon"
+                                width="16"
+                                height="12"
+                            >
                                 <use
                                     href="./images/svg/mail.svg#icon-mail"
                                 ></use>
@@ -53,9 +62,15 @@
                             info@devstudio.com</a
                         >
                     </li>
-                    <li class="item tel">
-                        <a href="tel:+380961111111" class="link tel"
-                            ><svg class="icon-mail" width="10" height="16">
+                    <li class="contacts-header__item">
+                        <a
+                            href="tel:+380961111111"
+                            class="contacts-header__link"
+                            ><svg
+                                class="contacts-header__icon"
+                                width="10"
+                                height="16"
+                            >
                                 <use href="./images/svg/tel.svg#icon-tel"></use>
                             </svg>
                             +38 096 111 11 11</a

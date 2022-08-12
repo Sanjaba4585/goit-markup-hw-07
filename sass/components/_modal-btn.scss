@@ -12,17 +12,14 @@
     letter-spacing: 0.06em;
     color: var(--primary-white-color);
     cursor: pointer;
+    transition: background-color 250ms ubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        background: #188ce8;
+    }
 }
 
 .form-button {
     display: flex;
     justify-content: center;
-}
-
-.submit:hover {
-    background: #188ce8;
-}
-
-.submit {
-    transition: background-color 250ms ubic-bezier(0.4, 0, 0.2, 1);
 }
