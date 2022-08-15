@@ -18,8 +18,7 @@
     &__title {
         max-width: 650px;
         color: var(--primary-white-color);
-        font-weight: 900;
-        font-size: 44px;
+        @include font($fw 900, $fs: 44px);
         line-height: 1.36;
         text-align: center;
         letter-spacing: 0.06em;
@@ -30,8 +29,7 @@
         border-radius: 4px;
         padding: 10px 32px;
         color: var(--primary-white-color);
-        font-weight: 700;
-        font-size: 16px;
+        @include font($fw: 700, $fs: 16px);
         line-height: 1.87;
         letter-spacing: 0.06em;
         background-color: var(--accent-color);

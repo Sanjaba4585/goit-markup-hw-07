@@ -33,15 +33,13 @@
 
     &__title {
         color: var(--title-text-color);
-        font-weight: 700;
-        font-size: 14px;
+        @include font($fw: 700, $fs: 14px);
         line-height: 1.14;
         text-transform: uppercase;
         margin-bottom: 10px;
     }
     &__text {
-        font-weight: 400;
-        font-size: 14px;
+        @include font($fs: 12px);
         line-height: 1.71;
     }
 }

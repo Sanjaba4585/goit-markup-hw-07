@@ -13,21 +13,21 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     background-color: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.online-input::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &:focus {
+        border-color: var(--accent-color);
+    }
 
-.online-input:focus {
-    border-color: var(--accent-color);
-}
-.online-input:focus::placeholder {
-    color: var(--main-footer-color);
+    &:focus::placeholder {
+        color: var(--main-footer-color);
+    }
 }
 
 .online-button {
@@ -42,17 +42,16 @@
     cursor: pointer;
     padding-left: 29px;
     text-align: left;
-    font-weight: 700;
-    font-size: 16px;
+    @include font ($fw: 700, $fs: 16px);
     line-height: 1.88;
     letter-spacing: 0.06em;
     color: var(--primary-white-color);
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.online-button:hover {
-    background-color: #188ce8;
+    &:hover {
+        background-color: #188ce8;
+    }
 }
 
 .online-icon {

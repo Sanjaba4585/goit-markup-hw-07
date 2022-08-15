@@ -464,11 +464,9 @@ textarea {
 .item-section {
   display: flex;
 }
-
 .item-section .image {
   margin-right: 30px;
 }
-
 .item-section .image:nth-child(3n) {
   margin-right: 0;
 }
@@ -497,28 +495,28 @@ textarea {
   bottom: 0;
 }
 
-.section.comand {
+.section-command {
   background: #f5f4fa;
 }
 
-.section-title.comand {
+.section-title {
   margin-bottom: 50px;
 }
 
-.comand-list {
+.command-list {
   display: flex;
 }
-.comand-list .item {
+.command-list__item {
   margin-right: 30px;
   background: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   height: 428px;
 }
-.comand-list .item:nth-child(4) {
+.command-list__item:nth-child(4) {
   margin: 0;
 }
-.comand-list .title {
+.command-list__title {
   margin-bottom: 10px;
   text-align: center;
   color: var(--title-text-color);
@@ -526,23 +524,17 @@ textarea {
   font-size: 16px;
   line-height: 1.19;
 }
-.comand-list .text {
+.command-list__text {
   text-align: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
+  margin-bottom: 16px;
 }
 
-.staff {
+.command-list__box {
   padding-top: 30px;
   padding-bottom: 30px;
-}
-.staff-icon {
-  color: currentColor;
-}
-
-.text {
-  margin-bottom: 16px;
 }
 
 .icon-list {
@@ -554,18 +546,7 @@ textarea {
   margin-left: auto;
   margin-right: auto;
 }
-
-.icon-box {
-  width: 44px;
-  height: 44px;
-  margin-left: 10px;
-  fill: #afb1b8;
-}
-.icon-box:first-child {
-  margin-left: 0;
-}
-
-.icon-link {
+.icon-list__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -577,9 +558,23 @@ textarea {
   fill: #afb1b8;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-link:hover, .icon-link:focus {
+.icon-list__link:hover, .icon-list__link:focus {
   background-color: var(--accent-color);
   fill: var(--primary-white-color);
+}
+
+.icon-list__box {
+  width: 44px;
+  height: 44px;
+  margin-left: 10px;
+  fill: #afb1b8;
+}
+.icon-list__box:first-child {
+  margin-left: 0;
+}
+
+.icon-list__svg {
+  color: currentColor;
 }
 
 .container.client {
@@ -701,7 +696,6 @@ span {
   height: 44px;
   margin-left: 10px;
 }
-
 .socitem:first-child {
   margin-left: 0;
 }
@@ -717,9 +711,7 @@ span {
   fill: var(--primary-white-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.soclink:hover,
-.soclink:focus {
+.soclink:hover, .soclink:focus {
   background-color: var(--accent-color);
 }
 
@@ -739,7 +731,6 @@ span {
   background-color: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .online-input::-moz-placeholder {
   font-size: 16px;
   line-height: 1.25;
@@ -748,7 +739,6 @@ span {
   -moz-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .online-input:-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
@@ -757,7 +747,6 @@ span {
   -ms-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .online-input::placeholder {
   font-size: 16px;
   line-height: 1.25;
@@ -765,19 +754,15 @@ span {
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .online-input:focus {
   border-color: var(--accent-color);
 }
-
 .online-input:focus::-moz-placeholder {
   color: var(--main-footer-color);
 }
-
 .online-input:focus:-ms-input-placeholder {
   color: var(--main-footer-color);
 }
-
 .online-input:focus::placeholder {
   color: var(--main-footer-color);
 }
@@ -801,7 +786,6 @@ span {
   color: var(--primary-white-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .online-button:hover {
   background-color: #188ce8;
 }
@@ -816,16 +800,12 @@ span {
 .button {
   display: flex;
   justify-content: center;
-}
-
-.button {
   margin-bottom: 50px;
 }
 
 .content {
   margin-right: 8px;
 }
-
 .content > button {
   font-family: inherit;
   cursor: pointer;
@@ -840,16 +820,13 @@ span {
   line-height: 1.53;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.content:nth-child(5n) {
-  margin-right: 0;
-}
-
-.content > button:hover,
-.content > button:focus {
+.content > button:hover, .content > button:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.content:nth-child(5n) {
+  margin-right: 0;
 }
 
 .picture-nav {
@@ -857,31 +834,39 @@ span {
   flex-wrap: wrap;
   width: 1170px;
 }
-
-.item-nav {
-  width: 370px;
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-
-.item-nav:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.item-nav:nth-child(3n) {
-  margin-right: 0;
-}
-
-.item-nav:nth-last-child(-n+3) {
-  margin-bottom: 0;
-}
-
 .picture-nav .link {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+}
+.picture-nav .text {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+}
+.picture-nav .headin {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.item-nav {
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.item-nav:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.item-nav:nth-child(3n) {
+  margin-right: 0;
+}
+.item-nav:nth-last-child(-n+3) {
+  margin-bottom: 0;
 }
 
 .link.wrap:hover .text-wrap {
@@ -915,18 +900,4 @@ span {
 
 .headin {
   margin-bottom: 4px;
-}
-
-.picture-nav .headin {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
-.picture-nav .text {
-  color: var(--primary-text-color);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
 }/*# sourceMappingURL=main.css.map */

@@ -1,7 +1,7 @@
 .contacts-header__link {
     display: block;
     color: var(--primary-text-color);
-    font-weight: 500;
+    @include font($w: 500);
     line-height: 1.14;
     letter-spacing: 0.02em;
 

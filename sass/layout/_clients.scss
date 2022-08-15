@@ -1,7 +1,6 @@
 .container.client {
     color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 36px;
+    @include font($fw: 700, $fs: 36px);
     line-height: 1.17;
     text-align: center;
 }
